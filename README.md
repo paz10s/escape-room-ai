@@ -27,7 +27,8 @@ My own implementation of Depth First Search and Breadth First Search in Python u
 
 ## Breadth First Search (BFS)
 - This algorithm uses a queue (first in, first out) to determine which nodes to check and expand. The behavior is as follows:
-    - The initial node is enqueued*. The algorithm then expands the first node in the queue and enqueues* each and every one of its children. Once all children have been enqueued, the parent node is removed from the queue. This process repeats until a goal is found. **(Before a node is enqueued, it is first goal checked.)*
+    - The initial node is enqueued*. The algorithm then expands the first node in the queue and enqueues* each and every one of its children. Once all children have been enqueued, the parent node is removed from the queue. This process repeats until a goal is found.
+        **Before a node is enqueued, it is first goal checked.*
     - When a goal is found, a path is traced. This is done by determining the set of traversed nodes that connect the initial node to the goal node. Afterwards, the set of actions required to follow this path is determined. The solution is then outputted.
 - The console outputs three things: the queued nodes, the dequeued nodes, and the queue.
 - Once a goal has been found, the program outputs the solution, similar to that of the DFS solution output.
