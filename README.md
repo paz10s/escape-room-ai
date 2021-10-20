@@ -1,11 +1,14 @@
-My own implementation of Depth First Search and Breadth First Search in Python.
+My own implementation of Depth First Search and Breadth First Search in Python using OOP. The `Pygame` library was used for the visuals.
 
-The `Pygame` library was used for visuals
+# Goal
+- The goal of the agent is to reach state `s29`. This is the state where both keys are picked up, the door is unlocked, and the agent is in cell `ex`.
+- To unlock the door, the agent must obtain both keys and enter cell `c1`. When this is done, the door will be automatically unlocked and the agent’s only next step will be to move to cell `ex`, transitioning into state `s29`.
+
 
 # Search Algorithms
-- Each search algorithm in this program is modified to avoid traversing a node twice. This is to optimize the algorithm since traversing a node more than once is unnecessary. This also prevents the tree traversal from having infinite depth, avoiding infinite loops in the DFS algorithm as it tries to reach the deepest node of the tree.
+- Each search algorithm in this program is modified to **avoid traversing a node twice**. This is to optimize the algorithm since traversing a node more than once is unnecessary. This also prevents the tree traversal from having infinite depth, avoiding infinite loops in the **DFS** algorithm as it tries to reach the deepest node of the tree.
 - A folder named Diagrams is provided, containing the State Space, State Transition, and the Graphs of the AI. The Graphs is used to visualize how each algorithm works, as presented in the provided video presentation.
-- The number of steps is equal to the number of times a goal check has occurred.
+- The number of ***steps*** is equal to the number of times a goal check has occurred.
     - For DFS, a goal check occurs every time a node is traversed.
     - For BFS, a goal check occurs every time before a node is queued.
 
